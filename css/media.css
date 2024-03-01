@@ -1,0 +1,468 @@
+@media (max-width: 1220px) {
+  body.lock {
+    overflow: auto;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .header__top {
+    margin-bottom: 234px;
+  }
+  .header__filter {
+    flex-direction: column;
+  }
+  .select__list {
+    flex-direction: column;
+    width: 100%;
+  }
+  .select__item {
+    width: 100%;
+  }
+  .about__inner {
+    gap: 180px;
+  }
+  .programs__inner {
+    gap: 50px;
+  }
+  .tours__item-top {
+    gap: 16px;
+  }
+  .tours__item-title {
+    font-size: 22px;
+  }
+  .tours__item-slogan {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tours__item-price {
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .photoreport__list {
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .photoreport__item--large {
+    grid-column-start: span 1;
+  }
+  .mailing__inner {
+    padding: 40px 60px;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 1080px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .logo img{
+    width: 120px;
+  }
+  .menu {
+    position: absolute;
+    background: #1A3E3E;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    bottom: 0;
+    align-items: start;
+    transition: all 400ms;
+    overflow-y: auto;
+    z-index: 49;
+  }
+  .menu.active {
+    transform: translateX(-100%);
+  }
+  .menu__list {
+    padding: 90px 24px 0px 24px;
+    flex-direction: column;
+  }
+  .menu__item:first-child {
+    display: none;
+  }
+  .menu__link::before {
+    content: '>';
+    margin-right: 8px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .menu-burger {
+    display: block;
+    z-index: 50;
+  }
+  .header__title {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  .about, 
+  .programs, 
+  .tours,
+  .blog {
+    padding: 80px 0;
+  }
+  .about__inner, 
+  .programs__inner {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .about__images {
+    width: 100%;
+    order: 2;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .about__images-item {
+    width: 100%;
+    height: 500px;
+  }
+  .about__images-item:last-child {
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  .about__content {
+    order: 1;
+  }
+  .about__title {
+    max-width: 700px;
+  }
+  .about__description, .about__btn {
+    margin-top: 24px;
+  }
+  .programs__images-list {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .programs__images-item img {
+    width: 100%;
+  } 
+  .programs__description, .programs__btn {
+    margin-top: 32px;
+  }
+  .tours__list {
+    margin-top: 32px;
+  }
+  .tours__item {
+    height: 400px;
+  }
+  .tours__item-content {
+    padding: 23px;
+    height: 70px;
+  }
+  .tours__item-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .tours__item-slogan {
+    display: none;
+  }
+  .tours__item-text {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tours__item-btn {
+    margin-top: 30px;
+  }
+  .blog__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .blog__item-details {
+    justify-content: start;
+    gap: 24px;
+  }
+  .photoreport {
+    padding: 80px 0;
+  }
+  .photoreport__list {
+    margin-top: 32px;
+  }
+  .mailing {
+    padding-bottom: 80px;
+  }
+  .mailing__inner {
+    position: relative;
+    bottom: 0;
+    flex-direction: column;
+  }
+  .mailing__top {
+    max-width: 100%;
+  }
+  .mailing__input-box {
+    max-width: 100%;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .mailing__form-btn {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .footer__inner {
+    padding: 50px 0 80px 0;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer__about {
+    max-width: 100%;
+  }
+  .footer__contacts {
+    margin-top: 30px;
+    display: flex;
+  }
+  .footer__social {
+    margin-top: 30px;
+  }
+
+  /* Убираем hover */
+  .btn:hover {
+    opacity: 1;
+  }  
+  .menu__link:hover {
+    color: #FDFDFD;
+  }
+  .play__btn:hover {
+    opacity: 1;
+  }
+  .blog__item:hover {
+    box-shadow: none;
+  }
+  .blog__item:hover .blog__item-title{
+    color: inherit;
+    text-decoration: none;
+  }
+  .footer__services-link:hover,
+  .footer__notes-link:hover {
+    color: #FDFDFD;
+  }
+  .footer__services-link:hover svg path,
+  .footer__notes-link:hover svg path {
+    fill: #FDFDFD;
+  }
+}
+
+@media (max-width: 900px) {
+  .tours__list {
+    overflow-x: scroll;
+  }
+  .tours__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .tours__item {
+    min-width: 285px;
+  }
+  .tours__btn {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img{
+    width: 100px;
+  }
+  .header__title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .header__filter {
+    margin-top: 20px;
+    padding: 26px 28px;
+  }
+  .about, 
+  .programs, 
+  .tours,
+  .blog,
+  .photoreport {
+    padding: 60px 0;
+  }
+  .about__images-item {
+    height: 600px;
+  }
+  .about__images-item:first-child {
+    display: none;
+  }
+  .about__title {
+    max-width: auto;
+  }
+  .programs__images-list {
+    display: none;
+  }
+  .blog__item-image {
+    border-radius: 6px;
+    width: 200px;
+    height: 240px;
+  }  
+  .blog__item-content {
+    padding: 12px 0px;
+    gap: 16px; 
+  }
+  .blog__item-title {
+    font-size: 22px;
+    line-height: 28px;
+  }  
+  .blog__item-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .photoreport-box {
+    justify-content: start;
+  }
+  .photoreport__list {
+    display: flex;
+    overflow-y: scroll;
+  }
+  .photoreport__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .photoreport__item {
+    min-width: 280px;
+    min-height: 250px;
+  }
+  .photoreport__btn {
+    margin-top: 32px;
+  }
+  .mailing {
+    padding-bottom: 60px;
+  }
+  .mailing__inner {
+    padding: 24px;
+    gap: 18px;
+  }
+  .mailing__form-group {
+    align-items: start;
+    flex-direction: column;
+  }
+  .mailing__input-box {
+    width: 100%;
+  }
+  .mailing__form-btn {
+    width: 100%;
+  }
+  .mailing__form-conditions {
+    margin-top: 24px;
+  }
+  .footer__bottom-content {
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 568px) {
+  .indication {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn {
+    padding: 12px 24px;
+  }
+  .header {
+    padding-top: 20px;
+  }
+  .logo img{
+    width: 84px;
+  }
+  .header__content {
+    padding-bottom: 50px;
+  }
+  .header__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .header__filter {
+    display: none;
+  } 
+  .filter__btn--mobile {
+    display: inline-block;
+    padding: 16px 36px;
+  }
+  .about, 
+  .programs,
+  .tours,
+  .blog,
+  .photoreport {
+    padding: 50px 0;
+  }
+  .tours__inner,
+  .blog__inner,
+  .photoreport__inner {
+    text-align: start;
+  }
+  .about__images-item {
+    height: 416px;
+  }
+  .about__btn, 
+  .programs__btn,
+  .tours__btn,
+  .blog__btn,
+  .photoreport__btn {
+    text-align: center;
+  }
+  .programs__offers-list {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .programs__offers-item {
+    align-items: start;
+  }
+  .blog__list {
+    margin-top: 32px;
+    overflow-x: scroll;
+    flex-direction: row;
+  }
+  .blog__list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .blog__item {
+    padding: 0px;
+    min-width: 265px;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .blog__item-image {
+    width: 100%;
+    height: 270px;
+    border-radius: 6px 6px 0px 0px;
+  }
+  .blog__item-content {
+    padding: 16px;
+    display: block;
+  }
+  .blog__item-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .blog__item-description {
+    margin-top: 16px; 
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .blog__item-details {
+    width: 100%;
+    margin-top: 16px;
+    justify-content: space-between;
+  }
+  .blog__btn {
+    margin-top: 32px;
+  }
+  .mailing {
+    padding-bottom: 50px;
+  }
+}
+
